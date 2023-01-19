@@ -3,14 +3,14 @@
 </script>
 
 <Navbar let:hidden let:toggle color="none">
-	<NavBrand href="/">
+	<NavBrand on:click={toggle} href="/">
 		<span class="self-center whitespace-nowrap text-xl font-semibold text-white"> JF Events </span>
 	</NavBrand>
 	<NavHamburger on:click={toggle} />
 	<NavUl {hidden}>
-		<NavLi href="/televisione">Televisione</NavLi>
-		<NavLi href="/cinema">Cinema</NavLi>
-		<NavLi href="/grandieventi">Grandi Eventi</NavLi>
+		<NavLi on:click={toggle} href="/televisione">Televisione</NavLi>
+		<NavLi on:click={toggle} href="/cinema">Cinema</NavLi>
+		<NavLi on:click={toggle} href="/grandieventi">Grandi Eventi</NavLi>
 	</NavUl>
 </Navbar>
 
