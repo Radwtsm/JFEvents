@@ -5,10 +5,10 @@
 	import Footer from '../components/Footer.svelte';
 </script>
 
-<div class="app ">
+<div class="app bg-neutral-900 ">
 	<Navbar />
 
-	<main>
+	<main class="mx-20">
 		<slot />
 	</main>
 
@@ -18,10 +18,5 @@
 <style>
 	.app {
 		width: 100vh;
-	}
-
-	main {
-		margin-right: 1rem;
-		margin-left: 1rem;
 	}
 </style>
